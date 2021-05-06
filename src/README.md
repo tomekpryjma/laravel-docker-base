@@ -2,7 +2,7 @@
 ---
 <br>
 
-**Do one of the below:**
+**Delete this file, then do one of the below:**
 
 - Clone an existing repository into this directory.
 - Drag existing files into this directory.
