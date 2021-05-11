@@ -43,7 +43,6 @@ services:
         depends_on:
             - server
         user: laravel
-        entrypoint: ['composer']
         networks:
             - laravel
     
@@ -54,7 +53,6 @@ services:
         volumes:
             - ./src:/var/www/html
         working_dir: /var/www/html
-        entrypoint: ['npm']
         networks:
             - laravel
 
@@ -68,7 +66,6 @@ services:
             - mariadb
         working_dir: /var/www/html
         user: laravel
-        entrypoint: ['php', '/var/www/html/artisan']
         networks:
             - laravel
 
