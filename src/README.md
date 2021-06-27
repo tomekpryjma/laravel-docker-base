@@ -1,9 +1,19 @@
-## The Laravel app
----
-<br>
+`docker-compose run --rm composer composer create-project laravel/laravel .`
 
-**Delete this file, then do one of the below:**
+`docker-compose run --rm composer composer require laravel/ui`
 
-- Clone an existing repository into this directory.
-- Drag existing files into this directory.
-- Run `docker-compose run --rm composer create-project laravel/laravel .`
+`docker-compose run --rm artisan ui vue --auth`
+
+`docker-compose run --rm npm /bin/bash`
+
+`docker-compose run --rm npm npm install`
+
+### In the container
+
+`npm install vue-loader@^15.9.5 --save-dev --legacy-peer-deps`
+
+`exit`
+
+### On host
+
+`docker-compose run --rm npm npm run dev`
