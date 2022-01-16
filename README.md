@@ -2,7 +2,7 @@
 
 ```
 cd src && \
-    rm .gitkeep && \\
+    rm .gitkeep && \
     docker-compose run --rm composer composer create-project laravel/laravel . && \
     docker-compose run --rm composer composer require laravel/ui && \
     docker-compose run --rm artisan php artisan ui vue --auth && \
