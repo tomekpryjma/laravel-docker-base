@@ -28,6 +28,8 @@ services:
             dockerfile: server.dockerfile
         volumes:
             - ./src:/var/www/html
+            - ./xdebug/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+            - ./xdebug/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
         networks:
             - laravel
         ports:
